@@ -55,6 +55,7 @@ async function shortURL() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
+                'Access-Control-Allow-Origin': '*',
             },
             body: `url=${encodeURIComponent(longURLTxt)}`
         });
@@ -90,3 +91,4 @@ window.addEventListener("submit", function(event) {
  * Update: HTML sadrzi 'submit', JS 'click'!!!
  * 
  */
+
